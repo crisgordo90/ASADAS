@@ -1,0 +1,10 @@
+﻿.pinText
+{ 
+    position:relative; 
+    top:-25px; 
+    left:2px;
+    width:30px;
+    color:#ffffff; 
+    text-align:center; 
+    font: bold 12px Arial; 
+}

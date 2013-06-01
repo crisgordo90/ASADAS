@@ -7,11 +7,14 @@ using System.Web.UI.WebControls;
 
 namespace ASADAS
 {
-    public partial class _Default : Page
+    public partial class Default : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+        protected void btnShowMap_Click(object sender, EventArgs e)
+        {
         }
     }
 }
