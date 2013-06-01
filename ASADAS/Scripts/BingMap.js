@@ -1,6 +1,4 @@
-﻿
-
-      var map = null;
+﻿var map = null;
 var noPins = true;
 
 function LoadMap() {
@@ -24,19 +22,27 @@ function UnloadMap() {
     }
 }
 
+//Agrega un Pin al mapa
 function addPin(e) {
     if (e.targetType == "map") {
-        var point = new Microsoft.Maps.Point(e.getX(), e.getY());
+        var point = new Microsoft.Maps.Point(e.getX(), e.getY());//Devuelve la ubicacion del punto donde se encuentra el punter
         var loc = e.target.tryPixelToLocation(point);
         var pin = new Microsoft.Maps.Pushpin(loc);
-        document.getElementById("textBox").value= loc.latitude + ", " + loc.longitude;
-        map.entities.push(pin);
+        document.getElementById("textBox").value= loc.latitude + ", " + loc.longitude; //carga el textbox con la latitud y longitud del ping actual
+        // Attach a handler to the pin so that it is removed when it is clicked
+        Microsoft.Maps.Events.addHandler(pin, 'click', removePin);
+        map.entities.push(pin);//agrega el pin
+
     }
 }
 
+//Elimina un Pin del mapa
+function removePin(e) {
+    var indexOfPinToRemove = map.entities.indexOf(e.target);
+    map.entities.removeAt(indexOfPinToRemove);
+}
 
 function shadePins(e) {
-
     if (noPins) {
 
         // If there aren't yet any pins on the map, do not grey the pin out.   
