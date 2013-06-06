@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{4F7FB20A-8473-4E28-A184-F9E68BA100C3}</ProjectGuid>
+    <ProjectGuid>{5A8A68A7-2150-4332-8BCC-6C18AF6DAD7E}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ASADAS</RootNamespace>
-    <AssemblyName>ASADAS</AssemblyName>
+    <RootNamespace>WebASADAS</RootNamespace>
+    <AssemblyName>WebASADAS</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -57,39 +57,70 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Css\Site.css" />
-    <Content Include="Default.aspx" />
-    <Content Include="Images\water.png" />
-    <Content Include="Mapa.aspx" />
-    <Content Include="Scripts\BingMap.js" />
+    <Content Include="css\layout.css" />
+    <Content Include="css\prettyPhoto.css" />
+    <Content Include="css\reset.css" />
+    <Content Include="css\style.css" />
+    <Content Include="Images\bg_content.png" />
+    <Content Include="Images\bg_img1.jpg" />
+    <Content Include="Images\bg_img2.jpg" />
+    <Content Include="Images\bg_img3.jpg" />
+    <Content Include="Images\big_img1.jpg" />
+    <Content Include="Images\big_img10.jpg" />
+    <Content Include="Images\big_img2.jpg" />
+    <Content Include="Images\big_img3.jpg" />
+    <Content Include="Images\big_img4.jpg" />
+    <Content Include="Images\big_img5.jpg" />
+    <Content Include="Images\big_img6.jpg" />
+    <Content Include="Images\big_img7.jpg" />
+    <Content Include="Images\big_img8.jpg" />
+    <Content Include="Images\big_img9.jpg" />
+    <Content Include="Images\border.gif" />
+    <Content Include="Images\close.gif" />
+    <Content Include="Images\footer_logo.gif" />
+    <Content Include="Images\loader.gif" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\marker_1.gif" />
+    <Content Include="Images\marker_left.gif" />
+    <Content Include="Images\marker_right.gif" />
+    <Content Include="Images\page1_img1.jpg" />
+    <Content Include="Images\page1_img2.jpg" />
+    <Content Include="Images\page2_img1.jpg" />
+    <Content Include="Images\page3_img1.jpg" />
+    <Content Include="Images\page3_img10.jpg" />
+    <Content Include="Images\page3_img2.jpg" />
+    <Content Include="Images\page3_img3.jpg" />
+    <Content Include="Images\page3_img4.jpg" />
+    <Content Include="Images\page3_img5.jpg" />
+    <Content Include="Images\page3_img6.jpg" />
+    <Content Include="Images\page3_img7.jpg" />
+    <Content Include="Images\page3_img8.jpg" />
+    <Content Include="Images\page3_img9.jpg" />
+    <Content Include="Images\page4_img1.jpg" />
+    <Content Include="Images\page4_img2.jpg" />
+    <Content Include="Images\page4_img3.jpg" />
+    <Content Include="index.html" />
+    <Content Include="js\bg.js" />
+    <Content Include="js\bgSlider.js" />
+    <Content Include="js\cufon-replace.js" />
+    <Content Include="js\cufon-yui.js" />
+    <Content Include="js\html5.js" />
+    <Content Include="js\jquery-1.6.js" />
+    <Content Include="js\jquery.easing.1.3.js" />
+    <Content Include="js\jquery.prettyPhoto.js" />
+    <Content Include="js\pages.js" />
+    <Content Include="js\PIE.htc" />
+    <Content Include="js\script.js" />
+    <Content Include="js\tabs.js" />
+    <Content Include="js\Ubuntu_400.font.js" />
+    <Content Include="js\Ubuntu_700.font.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Mapa.aspx.cs">
-      <DependentUpon>Mapa.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Mapa.aspx.designer.cs">
-      <DependentUpon>Mapa.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Site.Master.cs">
-      <DependentUpon>Site.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Site.Master.designer.cs">
-      <DependentUpon>Site.Master</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Site.Master" />
+    <Content Include="js\PIE.php" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -112,7 +143,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:52296/</IISUrl>
+          <IISUrl>http://localhost:55926/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

@@ -1,26 +1,18 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="ASADAS.Site" %>
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "htt>
-
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
-      <script type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
-
-   <script src="Scripts/BingMap.js" type="text/javascript"></script>
+    <title></title>    
+  
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body onload="LoadMap();" onunload="UnloadMap();">
+<body >
     <form id="form1" runat="server"> 
-        <div id='myMap' style="position:relative; width:400px; height:400px;"></div><br>
-      <b>Click the map to add a pushpin at that point.</b> 
-        <input id='textBox' type="text" style="width:250px;"/>
+        
       <div>
         <asp:ContentPlaceHolder ID="BodyContent" runat="server">
-        
         </asp:ContentPlaceHolder>
     </div>
     </form>
