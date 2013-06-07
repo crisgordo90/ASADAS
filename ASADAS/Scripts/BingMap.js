@@ -1,7 +1,8 @@
 ﻿var map = null;
 var noPins = true;
-var ltuberias = new Microsoft.Maps.EntityCollection();
-var layer = new Microsoft.Maps.EntityCollection();
+var layertuberias = new Microsoft.Maps.EntityCollection();
+var layerllaves = new Microsoft.Maps.EntityCollection();
+
 //http://www.garzilla.net/vemaps/Layers-via-the-Entity-Collection-with-Bing-Maps-7.aspx
 
 function LoadMap() {
@@ -26,8 +27,6 @@ function LoadMap() {
 
    
   //  Microsoft.Maps.Events.addHandler(map.entities, 'entityadded', shadePins);  // Accesar los puntos anteiores
-    
-
 }
 
 function UnloadMap() {
